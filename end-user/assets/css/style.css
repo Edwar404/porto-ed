@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: var(--first);
+    scroll-behavior: smooth;
+}
+:root {
+    --first: #47db48;
+    --primary: #1e201e;
+    ---secondary: #3c3d37;
+    --secondary-transparent: rgba(60, 61, 55, 0.8);
+    --third: #697565;
+    --fourth: #ecdfcc;
+    --dominan: black;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: var(--first);
+    background-color: var(--dominan);
+}
+
+.navbar .container .navbar-toggler-icon {
+    color: var(--first);
+}
+
+.navbar .container .navbar-collapse .nav-item a,
+.navbar .container .navbar-collapse .nav-item .dropdown-menu a,
+.navbar .container .navbar-collapse .navbar-text a {
+    color: var(--first);
+}
+.navbar .container .navbar-collapse .navbar-text .action-button {
+    border-color: var(--first);
+}
+.hero {
+    height: 100vh;
+}
+.hero img {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero-content {
+    top: 50%;
+    left: 3%; /* Posisikan ke kiri */
+    transform: translateY(-90%);
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan shadow untuk kontras */
+    max-width: 600px;
+    background-color: var(--secondary-transparent);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+.hero-content2 {
+    top: 82%;
+    left: 55%; /* Posisikan ke kiri */
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan shadow untuk kontras */
+    max-width: 600px;
+    background-color: var(--secondary-transparent);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Form email */
+.email-signup {
+    display: flex;
+}
+
+.email-signup input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.email-signup button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-content p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+/* HALAMAN DEPAN */
+#beranda {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+#beranda .row {
+    gap: 40px;
+}
+.beranda-content {
+    max-width: 600px;
+}
+#beranda .beranda-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+#beranda .beranda-content p {
+    font-size: 16px;
+    margin: 20px 0px 40px 0;
+    color: white;
+}
+.beranda-content .btn-box {
+    height: 50px;
+    width: 150px;
+}
+.btn-box a {
+    border: 2px solid var(--first);
+    font-size: 16px;
+    color: var(--first);
+    font-weight: 700;
+    letter-spacing: 3px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.btn-box a:hover {
+    color: var(--dominan);
+}
+.active,
+.btn:hover {
+    color: var(--dominan);
+}
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: var(--first);
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.sosmed {
+    padding-top: 40px;
+}
+
+.sosmed a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: 2px solid var(--first);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--first);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+.sosmed a:hover {
+    background: var(--first);
+    color: #000;
+}
+.active,
+.sosmed:hover {
+    color: var(--dominan);
+}
+.sosmed a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: var(--dominan);
+    width: 0;
+    background: var(--first);
+    z-index: -1;
+    transition: 0.5s;
+}
+.pfp img {
+    width: 370px;
+    height: 340px;
+    top: 30vh;
+    right: 15vh;
+    box-shadow: 0 0 20px var(--first);
+    transition: 0.5s;
+}
+.pfp img:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    font-size: 35px;
+    color: var(--tersier);
+    transition: 0.3s;
+}
+/* AKHIR HALAMAN DEPAN */

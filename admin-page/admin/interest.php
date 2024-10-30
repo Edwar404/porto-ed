@@ -24,7 +24,7 @@ if (isset($_GET['delete'])) {
         content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Corona Admin</title>
     <!-- plugins:css -->
-    <?php include 'inc/head.php'?>
+    <?php include 'inc/head.php' ?>
 </head>
 
 <body>
@@ -67,7 +67,7 @@ if (isset($_GET['delete'])) {
                                                     <td><?php echo $rowInterest['nama_interest'] ?></td>
                                                     <td>
                                                         <a onclick="return confirm('Apakah anda yakin akan menghapus data ini??')"
-                                                            href="project.php?delete=<?php echo $rowInterest['id'] ?>" class="btn btn-danger btn-md">
+                                                            href="interest.php?delete=<?php echo $rowInterest['id'] ?>" class="btn btn-danger btn-md">
                                                             <span class="mdi mdi-delete-sweep"></span>
                                                         </a>
                                                     </td>
@@ -91,7 +91,7 @@ if (isset($_GET['delete'])) {
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <?php include 'inc/script.php'?>
+    <?php include 'inc/script.php' ?>
 </body>
 
 </html>

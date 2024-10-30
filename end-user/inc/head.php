@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="content/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One&amp;subset=japanese&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400&amp;display=swap">

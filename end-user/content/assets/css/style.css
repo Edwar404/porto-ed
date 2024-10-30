@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: var(--first);
+    scroll-behavior: smooth;
+}
+:root {
+    --first: #47db48;
+    --primary: #1e201e;
+    ---secondary: #3c3d37;
+    --secondary-transparent: rgba(60, 61, 55, 0.8);
+    --third: #697565;
+    --fourth: #ecdfcc;
+    --dominan: black;
+}
+
+body,
+html {
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: var(--first);
+    background-color: var(--dominan);
+}
+
+.navbar .container .navbar-toggler-icon {
+    color: var(--first);
+}
+
+.navbar .container .navbar-collapse .nav-item a,
+.navbar .container .navbar-collapse .nav-item .dropdown-menu a,
+.navbar .container .navbar-collapse .navbar-text a {
+    color: var(--first);
+}
+.navbar .container .navbar-collapse .navbar-text .action-button {
+    border-color: var(--first);
+}
+
+

@@ -244,17 +244,17 @@ $rowLoginUser = mysqli_fetch_assoc($queryLoginUser);
                 </ul>
             </div>
         </li>
-        <!-- <li class="nav-item menu-items">
+        <li class="nav-item menu-items">
             <a
                 class="nav-link"
-                href="pages/forms/basic_elements.html">
+                href="tambah-logo.php">
                 <span class="menu-icon">
                     <i class="mdi mdi-playlist-play"></i>
                 </span>
-                <span class="menu-title">Form Elements</span>
+                <span class="menu-title">Ubah Logo</span>
             </a>
         </li>
-        <li class="nav-item menu-items">
+        <!-- <li class="nav-item menu-items">
             <a
                 class="nav-link"
                 href="pages/tables/basic-table.html">

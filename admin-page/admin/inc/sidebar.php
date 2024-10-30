@@ -11,8 +11,8 @@ $rowLoginUser = mysqli_fetch_assoc($queryLoginUser);
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div
         class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo d-flex justify-content-center align" href="index.html"><img src="upload/images.png" alt="logo" /></a>
-        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="upload/images.png" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo d-flex justify-content-center align" href="index.php"><img src="upload/akatsuki.jpg" class="rounded-circle" style="height: 60px;" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini" href="index.php"><img src="uupload/akatsuki.jpg" alt="logo" /></a>
     </div>
     <ul class="nav">
         <li class="nav-item profile">
@@ -254,17 +254,17 @@ $rowLoginUser = mysqli_fetch_assoc($queryLoginUser);
                 <span class="menu-title">Ubah Logo</span>
             </a>
         </li>
-        <!-- <li class="nav-item menu-items">
+        <li class="nav-item menu-items">
             <a
                 class="nav-link"
-                href="pages/tables/basic-table.html">
+                href="contact.php">
                 <span class="menu-icon">
                     <i class="mdi mdi-table-large"></i>
                 </span>
-                <span class="menu-title">Tables</span>
+                <span class="menu-title">Contact</span>
             </a>
         </li>
-        <li class="nav-item menu-items">
+         <!--<li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-icon">
                     <i class="mdi mdi-chart-bar"></i>

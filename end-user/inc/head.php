@@ -11,4 +11,5 @@
     <link rel="stylesheet" href="content/assets/css/Responsive-Image-Grid.css">
     <link rel="stylesheet" href="content/assets/css/Skill-Item-skill.css">
     <link rel="stylesheet" href="content/assets/css/Skill-Item.css">
+    <link rel="shortcut icon" href="../admin-page/admin/upload/akatsuki.jpg" type="image/x-icon">
     <link rel="stylesheet" href="content/assets/css/sticky-dark-top-nav-with-dropdown.css">

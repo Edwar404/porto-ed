@@ -16,6 +16,7 @@ $rowLogo = mysqli_fetch_assoc($queryLogo);
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One&amp;subset=japanese&amp;display=swap">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="../admin-page/admin/upload/akatsuki.jpg" type="image/x-icon">
 </head>
 
 <body>

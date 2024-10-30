@@ -66,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section style="background: #1E201E;">
+        <!-- <section style="background: #1E201E;">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1 style="color: #47db48;">Personal</h1>
@@ -76,7 +76,7 @@
             <div class="row">
                 <div class="col-md-12 justify-content-center d-flex align-items-center"><span style="background: #47db48;">facebook</span><span style="background: #47db48;">Instagram</span><span style="background: #47db48;">TextLinkedIn</span><span style="background: #47db48;">Whatsapp</span></div>
             </div>
-        </section>
+        </section> -->
         <?php include 'inc/footer.php'?>
     </div>
     <?php include 'inc/script.php'?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2024 at 06:51 AM
+-- Generation Time: Oct 31, 2024 at 09:43 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,7 +41,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `addres`, `number`, `email`, `created_at`, `updated_at`) VALUES
-(1, 'A108 Adam Street, New York, NY 535022', 2147483647, 'info@example.com', '2024-10-31 05:40:47', '2024-10-31 05:40:47');
+(1, 'A108 Adam Street, New York, NY 535022234', 2147483647, 'info123@example.com', '2024-10-31 05:40:47', '2024-10-31 07:26:02');
 
 -- --------------------------------------------------------
 
@@ -90,8 +90,7 @@ INSERT INTO `interest` (`id`, `nama_interest`, `created_at`, `updated_at`) VALUE
 (6, 'Front-End Development', '2024-10-30 07:17:36', '2024-10-30 07:17:36'),
 (7, 'Back-End Development', '2024-10-30 07:17:54', '2024-10-30 07:17:54'),
 (8, 'PostgreSQL', '2024-10-30 07:18:55', '2024-10-30 07:18:55'),
-(9, 'Python', '2024-10-30 07:53:33', '2024-10-30 07:53:33'),
-(10, 'tes', '2024-10-30 07:55:47', '2024-10-30 07:55:47');
+(9, 'Python', '2024-10-30 07:53:33', '2024-10-30 07:53:33');
 
 -- --------------------------------------------------------
 
@@ -111,7 +110,27 @@ CREATE TABLE `logo` (
 --
 
 INSERT INTO `logo` (`id`, `foto`, `created_at`, `updated_at`) VALUES
-(1, 'akatsuki.jpg', '2024-10-30 09:41:26', '2024-10-30 09:41:26');
+(1, 'hajime.jpg', '2024-10-30 09:41:26', '2024-10-31 07:21:36');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logo_nav`
+--
+
+CREATE TABLE `logo_nav` (
+  `id` int(11) NOT NULL,
+  `foto` varchar(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `update_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `logo_nav`
+--
+
+INSERT INTO `logo_nav` (`id`, `foto`, `created_at`, `update_at`) VALUES
+(2, 'akatsuki.jpg', '2024-10-31 07:16:59', '2024-10-31 07:20:33');
 
 -- --------------------------------------------------------
 
@@ -158,8 +177,7 @@ INSERT INTO `skills` (`id`, `nama_skill`, `created_at`, `update_at`) VALUES
 (1, 'Front-End Development', '2024-10-29 12:13:28', '2024-10-29 12:13:28'),
 (2, 'Back-End Development', '2024-10-30 11:54:23', '2024-10-30 11:54:23'),
 (3, 'Full Stack Development', '2024-10-30 11:54:44', '2024-10-30 11:54:44'),
-(4, 'Android Development', '2024-10-30 11:58:10', '2024-10-30 11:58:10'),
-(6, 'Cyber Security', '2024-10-30 12:30:16', '2024-10-30 12:30:16');
+(4, 'Android Development', '2024-10-30 11:58:10', '2024-10-30 11:58:10');
 
 -- --------------------------------------------------------
 
@@ -214,6 +232,12 @@ ALTER TABLE `logo`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `logo_nav`
+--
+ALTER TABLE `logo_nav`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `project`
 --
 ALTER TABLE `project`
@@ -257,7 +281,13 @@ ALTER TABLE `interest`
 -- AUTO_INCREMENT for table `logo`
 --
 ALTER TABLE `logo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `logo_nav`
+--
+ALTER TABLE `logo_nav`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `project`

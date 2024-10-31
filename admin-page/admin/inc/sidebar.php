@@ -247,11 +247,21 @@ $rowLoginUser = mysqli_fetch_assoc($queryLoginUser);
         <li class="nav-item menu-items">
             <a
                 class="nav-link"
-                href="tambah-logo.php">
+                href="logo.php">
                 <span class="menu-icon">
                     <i class="mdi mdi-playlist-play"></i>
                 </span>
-                <span class="menu-title">Ubah Logo</span>
+                <span class="menu-title">Logo</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a
+                class="nav-link"
+                href="logo-nav.php">
+                <span class="menu-icon">
+                    <i class="mdi mdi-playlist-play"></i>
+                </span>
+                <span class="menu-title">Logo Navbar</span>
             </a>
         </li>
         <li class="nav-item menu-items">
@@ -264,7 +274,7 @@ $rowLoginUser = mysqli_fetch_assoc($queryLoginUser);
                 <span class="menu-title">Contact</span>
             </a>
         </li>
-         <!--<li class="nav-item menu-items">
+        <!--<li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-icon">
                     <i class="mdi mdi-chart-bar"></i>

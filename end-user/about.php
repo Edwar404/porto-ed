@@ -6,6 +6,8 @@ $queryInterest = mysqli_query($koneksi, "SELECT * FROM interest");
 $queryProject = mysqli_query($koneksi, "SELECT * FROM project");
 $querySkills = mysqli_query($koneksi, "SELECT * FROM skills");
 $queryContact = mysqli_query($koneksi, "SELECT * FROM contact");
+$queryLogo = mysqli_query($koneksi, "SELECT * FROM logo");
+$rowLogo = mysqli_fetch_assoc($queryLogo);
 
 ?>
 
@@ -54,7 +56,9 @@ $queryContact = mysqli_query($koneksi, "SELECT * FROM contact");
         <section id="about" class="py-5" style="background: #000;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 d-flex justify-content-center" style="height:500px;"><img width="" class="object-fit-cover" src="assets/img/sherlock2.png"></div>
+                    <div class="col-md-5 d-flex justify-content-center" style="height:500px;">
+                        <img width="" class="object-fit-cover" src="../admin-page/admin/upload/<?php echo $rowLogo['foto'] ?>">
+                    </div>
                     <div class="col-md-7">
                         <h1 class="pb-2" style="color: #47db48;">I'm Edwar Ibrahim</h1>
                         <p class="py-2"><em><span style="color: rgb(250, 250, 250);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></em></p>
@@ -174,56 +178,57 @@ $queryContact = mysqli_query($koneksi, "SELECT * FROM contact");
         </section>
         <section class="py-5">
             <?php while ($rowContact = mysqli_fetch_assoc($queryContact)) { ?>
-            <div class="container pb-4">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="location-outline"></ion-icon></span>
-                            <div>
-                                <h5>Addres</h5>
-                                <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['addres']?></span></p>
+                <div class="container pb-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="location-outline"></ion-icon></span>
+                                <div>
+                                    <h5>Addres</h5>
+                                    <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['addres'] ?></span></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center  gap-2"><span style="font-size: 3rem;"><ion-icon name="logo-whatsapp"></ion-icon></span>
-                            <div>
-                                <h5>Call Me</h5>
-                                <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['number']?></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="mail-unread-outline"></ion-icon></span>
-                            <div>
-                                <h5>Email</h5>
-                                <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['email']?></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="share-social-outline"></ion-icon></span>
-                            <div>
-                                <h5>Social Media</h5>
-                                <p> 
-                                    <span style="font-size: 2rem;">
-                                        <ion-icon name="logo-facebook"></ion-icon> 
-                                    </span>
-                                    <span style="font-size: 2rem;">
-                                        <ion-icon name="logo-instagram"></ion-icon> 
-                                    </span>
-                                    <span style="font-size: 2rem;">
-                                        <ion-icon name="logo-linkedin"></ion-icon></p>
-                                    </span>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center  gap-2"><span style="font-size: 3rem;"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                                <div>
+                                    <h5>Call Me</h5>
+                                    <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['number'] ?></span></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <?php }?>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="mail-unread-outline"></ion-icon></span>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p><span style="color: rgb(250, 250, 250); background-color: rgb(0, 0, 0);"><?php echo $rowContact['email'] ?></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-2"><span style="font-size: 3rem;"><ion-icon name="share-social-outline"></ion-icon></span>
+                                <div>
+                                    <h5>Social Media</h5>
+                                    <p>
+                                        <span style="font-size: 2rem;">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </span>
+                                        <span style="font-size: 2rem;">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </span>
+                                        <span style="font-size: 2rem;">
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                    </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </section>
         <!-- FOOTER -->
         <?php include 'inc/footer.php' ?>

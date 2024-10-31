@@ -1,8 +1,8 @@
 <?php
 
 include '../admin-page/admin/koneksi.php';
-$queryLogo = mysqli_query($koneksi, "SELECT * FROM logo");
-$rowLogo = mysqli_fetch_assoc($queryLogo);
+$queryLogoNav = mysqli_query($koneksi, "SELECT * FROM logo_nav");
+$rowLogoNav = mysqli_fetch_assoc($queryLogoNav);
 
 ?>
 
@@ -10,7 +10,7 @@ $rowLogo = mysqli_fetch_assoc($queryLogo);
     <div class="container">
         <div>
             <a class="navbar-brand" href="#">
-                <img src="../admin-page/admin/upload/<?php echo $rowLogo['foto'] ?>" style="max-width:100px">
+                <img src="../admin-page/admin/upload/<?php echo $rowLogoNav['foto'] ?>" style="max-width:100px">
             </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="color: #47db48;background: #47db48;">
                 <span class="visually-hidden">Toggle navigation</span>
                 <span class="navbar-toggler-icon" style="color: #47db48;">
